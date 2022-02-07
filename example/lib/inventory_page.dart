@@ -241,6 +241,7 @@ class _InventoryPageState extends State<InventoryPage> {
         _transponders.add(tranponder);
         _barcodes.add(tranponder);
       });
+      runRfidTagMessage();
     });
   }
 
@@ -254,6 +255,7 @@ class _InventoryPageState extends State<InventoryPage> {
         _barcodes.add(tranponder);
         //barcodes.add(transponders[0].characters.toString());
       });
+      runBarcodeMessage();
     });
   }
 
